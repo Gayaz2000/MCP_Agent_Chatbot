@@ -22,5 +22,5 @@ async def mcp_tools_node(state, config):
 
 if __name__ == "__main__":
     import asyncio
-    config = {"configurable":{"langgraph_auth_user": "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"}}
+    config = {"configurable":{"langgraph_auth_user": ""}}
     asyncio.run(mcp_tools_node("CA", config))
