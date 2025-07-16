@@ -9,8 +9,6 @@ load_dotenv("../.env")
 
 mcp = FastMCP(name="My_Server", host="0.0.0.0", port=8040)
 
-NWS_API_BASE = "https://api.weather.gov"
-USER_AGENT = "MySerever/1.0"
 
 async def make_nws_request(url: str) -> dict[str, Any] | None:
     """Make a request to the NWS API with proper error handling."""
@@ -77,7 +75,7 @@ async def amultiply(a: float, b: float)-> float:
 
 
 @mcp.tool()
-async def get_weather_from_weatherapi(city: str)-> str: #WEATHER_API_KEY: str
+async def get_weather_from_weatherapi(city: str, WEATHER_API_KEY: str)-> str: #
     """
     Returns weather data prediction for next 3 days
     Args:
@@ -88,7 +86,7 @@ async def get_weather_from_weatherapi(city: str)-> str: #WEATHER_API_KEY: str
     """
     # def get_weather_from_weatherapi() :
     try:
-        url = f"http://api.weatherapi.com/v1/forecast.json?key={"fa032005413e40c981d81949251706"}&q={city}&days=3&aqi=no&alerts=no"
+        url = f"http://api.weatherapi.com/v1/forecast.json?key={WEATHER_API_KEY}&q={city}&days=3&aqi=no&alerts=no"
         response = requests.get(url)
         
         # Ensure valid JSON

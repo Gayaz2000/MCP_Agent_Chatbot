@@ -7,10 +7,10 @@ from langchain_mcp_adapters.tools import load_mcp_tools
 from langgraph.prebuilt import create_react_agent
 
 server_params = {
-    "url": "https://api.weather.gov",
+    "url": "",
     "headers": {
-        "User-Agent": "MySerever/1.0",
-        "Accept": "application/geo+json"
+        "User-Agent": "",
+        "Accept": ""
     }
 }
 
