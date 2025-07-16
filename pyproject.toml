@@ -11,5 +11,6 @@ dependencies = [
     "langchain-mcp-adapters>=0.1.9",
     "langgraph>=0.5.3",
     "mcp[cli]>=1.11.0",
+    "pillow>=11.3.0",
     "python-dotenv>=1.1.1",
 ]

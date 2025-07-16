@@ -1,8 +1,22 @@
+// {
+//     "My_Server": {
+//         "transport": "streamable_http",
+//         "url": "http://localhost:8040/mcp"
+//     }
+// }
+
 {
-    "math": {
-        "command": "python",
-        "args": ["D:\\My Files\\MCP_Agent_Chatbot\\mcp_servers\\server.py"],
-        "transport": "stdio"
+    "mcpServers":{
+        "My_Server":{
+            "commnd": "uv",
+            "args": [
+                "run",
+                "--with",
+                "mcp[cli]",
+                "mcp",
+                "run",
+                "D:/My Files/MCP_Agent_Chatbot/mcp_client/mcp.json"
+            ]
+        }
     }
 }
-
