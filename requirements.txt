@@ -1,0 +1,8 @@
+mcp[cli]
+fastapi
+fastapi[standard]
+python-dotenv
+langchain_groq
+langchain_mcp_adapters
+langgraph
+httpx

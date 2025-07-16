@@ -1,0 +1,15 @@
+[project]
+name = "mcp-agent-chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.116.1",
+    "httpx>=0.28.1",
+    "langchain-groq>=0.3.6",
+    "langchain-mcp-adapters>=0.1.9",
+    "langgraph>=0.5.3",
+    "mcp[cli]>=1.11.0",
+    "python-dotenv>=1.1.1",
+]
