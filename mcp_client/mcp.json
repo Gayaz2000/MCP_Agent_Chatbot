@@ -1,0 +1,8 @@
+{
+    "math": {
+        "command": "python",
+        "args": ["D:\\My Files\\MCP_Agent_Chatbot\\mcp_servers\\server.py"],
+        "transport": "stdio"
+    }
+}
+
