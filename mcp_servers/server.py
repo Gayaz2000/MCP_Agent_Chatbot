@@ -13,8 +13,8 @@ mcp = FastMCP(name="My_Server", host="0.0.0.0", port=8040)
 async def make_nws_request(url: str) -> dict[str, Any] | None:
     """Make a request to the NWS API with proper error handling."""
     headers = {
-        "User-Agent": USER_AGENT,
-        "Accept": "application/geo+json"
+        "User-Agent": "",
+        "Accept": ""
     }
     async with httpx.AsyncClient() as client:
         try:
